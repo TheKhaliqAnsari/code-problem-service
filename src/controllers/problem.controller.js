@@ -1,4 +1,4 @@
-function pingProblem(req, res){
+function pingProblem(req, res) {
     res.send({
         message: "Problem controller is working:"
     })
@@ -9,20 +9,20 @@ function addProblem(req, res) {
 }
 
 
-function getProblem(req, res){
+function getProblem(req, res) {
 
 }
 
-function getProblems(req, res){
+function getProblems(req, res) {
 
 }
 
 
-function deleteProblem(req, res){
+function deleteProblem(req, res) {
 
 }
 
-function updateProblem(req, res){
+function updateProblem(req, res) {
 
 }
 
