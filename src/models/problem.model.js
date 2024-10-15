@@ -27,7 +27,7 @@ const problemSchema = new mongoose.Schema({
         default: 'easy'
     },
     testCases: [
-        {
+        {   
             input: {
                 type: String,
                 required: true

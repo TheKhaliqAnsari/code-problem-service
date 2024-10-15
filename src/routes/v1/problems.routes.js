@@ -9,13 +9,13 @@ const problemRouter = express.Router();
 
 problemRouter.get('/ping', problemController.pingProblem)
 
-problemRouter.get('/:id', problemController.getProblem);
+problemRouter.get('/:problemId', problemController.getProblem);
 problemRouter.get('/', problemController.getProblems);
 problemRouter.post('/', problemController.addProblem);
 
-problemRouter.delete('/:id', problemController.deleteProblem);
+problemRouter.delete('/:problemId', problemController.deleteProblem);
 
-problemRouter.put('/:id', problemController.updateProblem);
+problemRouter.put('/:problemId', problemController.updateProblem);
 
 
 module.exports = problemRouter;

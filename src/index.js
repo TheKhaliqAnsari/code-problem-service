@@ -29,11 +29,11 @@ app.get('/ping', (req, res) => {
 app.use(errorHandler);
 
 
-app.listen(PORT, (error) => {
+app.listen(PORT, async(error) => {
     if (error) {
         console.log(`Error starting the server: ${error.message}`);
     }
     console.log(`Server is started on port ${PORT}`)
-    dbConnectionHandler();
+    await dbConnectionHandler();
     console.log("Db connected successfully.")
 })
